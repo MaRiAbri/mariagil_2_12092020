@@ -1,0 +1,138 @@
+* {
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.container1 {
+    display:flex;
+    flex-flow: column nowrap;
+}
+
+.header {
+    background: darkgrey;
+    display:flex;
+    flex-flow: column nowrap;
+}
+
+.menu {
+    background: white;
+    display:flex;
+    flex-flow:row nowrap;
+}
+.logo {
+    background-color: rgb(199, 144, 35);
+    flex: 1 1 auto;
+    
+}
+
+.nav {
+    background-color: rgb(182, 140, 49);
+    flex: 3 1 auto;
+}
+
+.texto-principal {
+    background-color: white;
+    flex: 3 1 auto;
+}
+
+h1 {
+    background: rgb(223, 210, 210);
+    flex: 1 1 100%;
+}
+
+.section {
+    background: darkgrey;
+    display:flex;
+}
+
+.articulos {
+    background: white;
+    display: flex;
+    flex-flow:wrap;
+    flex: 3 1 auto;
+}
+
+.Herbegements-a-Marseille {
+    background-color: yellowgreen;
+    display: flex;
+    flex-flow: row wrap;
+    flex: 3 1 auto;
+}
+
+.articulo {
+    background-color: white;
+    flex: 1 1 30%;
+  
+}
+.navegacion {
+    background-color: yellow;
+    flex: 1 1 100%;
+}
+.aside {
+    background-color: turquoise;
+    flex: 1 1 auto;
+}
+.les-plus-populaires {
+    background-color: rgb(180, 159, 155);
+    flex: 1 1 auto;
+}
+.Activites-a-Marseille{
+    background-color: teal;
+    display: flex;
+    flex-flow: row wrap;
+    flex: 1 1 auto;
+   
+}
+.footer {
+    background: darkgray;
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: center;
+
+}
+.menu-footer{
+    background-color: thistle;
+    flex-direction: row wrap;
+    flex:auto;
+}
+@media screen and (max-width: 800px)
+{
+    .section{
+        flex-direction: column;
+    }
+    .menu{
+        flex-direction: column;
+    }
+    .footer{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 600px){
+    .articulos{
+        flex-flow: column;
+    }
+    .Herbegements-a-Marseille{
+        flex-flow: column;
+    }
+    .Activites-a-Marseille{
+        flex-flow: column;
+    }
+    .footer{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 400px){
+    .articulos{
+        flex-direction: column;
+    }
+    .Herbegements-a-Marseille{
+        flex-direction: column;
+    }
+    .Activites-a-Marseille{
+        flex-direction: column;
+    }
+    .footer{
+        flex-direction: column;
+    }
+}
