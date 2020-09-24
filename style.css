@@ -1,138 +1,140 @@
-* {
-    margin: 10px;
-    padding: 10px;
-    box-sizing: border-box;
-}
-
-.container1 {
-    display:flex;
-    flex-flow: column nowrap;
-}
-
-.header {
-    background: darkgrey;
-    display:flex;
-    flex-flow: column nowrap;
-}
-
-.menu {
-    background: white;
-    display:flex;
-    flex-flow:row nowrap;
-}
-.logo {
-    background-color: rgb(199, 144, 35);
-    flex: 1 1 auto;
-    
-}
-
-.nav {
-    background-color: rgb(182, 140, 49);
-    flex: 3 1 auto;
-}
-
-.texto-principal {
+/* Header */
+.header{
     background-color: white;
-    flex: 3 1 auto;
-}
-
-h1 {
-    background: rgb(223, 210, 210);
-    flex: 1 1 100%;
-}
-
-.section {
-    background: darkgrey;
-    display:flex;
-}
-
-.articulos {
-    background: white;
+    height: 80px;
+    width: 100%;
     display: flex;
-    flex-flow:wrap;
-    flex: 3 1 auto;
+    justify-content: space-between;
 }
-
-.Herbegements-a-Marseille {
-    background-color: yellowgreen;
-    display: flex;
-    flex-flow: row wrap;
-    flex: 3 1 auto;
+.logo{
+    width:140px ;
+    height:100% ;
 }
-
-.articulo {
-    background-color: white;
-    flex: 1 1 30%;
+.logo_img{
+    width: 100%;
+    height: 100%;
+    margin-left: 3rem;
+}
+.nav{
+    height: 100%;
+    font-family: Raleway;
   
 }
-.navegacion {
-    background-color: yellow;
-    flex: 1 1 100%;
-}
-.aside {
-    background-color: turquoise;
-    flex: 1 1 auto;
-}
-.les-plus-populaires {
-    background-color: rgb(180, 159, 155);
-    flex: 1 1 auto;
-}
-.Activites-a-Marseille{
-    background-color: teal;
+.nav_ul{
     display: flex;
-    flex-flow: row wrap;
-    flex: 1 1 auto;
-   
-}
-.footer {
-    background: darkgray;
-    display: flex;
-    flex-flow:row wrap;
     justify-content: center;
+    list-style: none;
+    height: 100%;
+    margin: 0;
+    align-items:center ;
+    
+}
+.nav_li{
+    margin: 0px 30px;
+}
+
+
+/* Fin Header */
+.options_filtres{
+    display: flex;
+    margin: 3rem;
+}
+
+/* Options */
+.options_filtres_title{
+    width: 13rem;
+    height: 2rem;
+    border-radius: 100rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem;
+    position: relative;
+}
+.options_filtres--icono{
+    width: 40px;
+    height: 40px;
+    background-color:#0065FC ;
+    border-radius: 1600px;
+    position:absolute;
+    top: 9px;
+    right: 8px;
+    left: 0;
+    color: #fff;
+    font-size: 1.5em;
 
 }
-.menu-footer{
-    background-color: thistle;
-    flex-direction: row wrap;
-    flex:auto;
+
+  
+
+/* Container */
+.conteneur{
+    display: flex;
+    flex-wrap: wrap;
 }
-@media screen and (max-width: 800px)
-{
-    .section{
-        flex-direction: column;
-    }
-    .menu{
-        flex-direction: column;
-    }
-    .footer{
-        flex-direction: column;
-    }
+.articulos {
+    width: 60rem;
+    height: 40rem;
+    background: grey;
+    float: left;
 }
-@media screen and (max-width: 600px){
-    .articulos{
-        flex-flow: column;
-    }
-    .Herbegements-a-Marseille{
-        flex-flow: column;
-    }
-    .Activites-a-Marseille{
-        flex-flow: column;
-    }
-    .footer{
-        flex-direction: column;
-    }
+
+.articulos__seccion1 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 20rem;
+    align-items: center;
 }
-@media screen and (max-width: 400px){
-    .articulos{
-        flex-direction: column;
-    }
-    .Herbegements-a-Marseille{
-        flex-direction: column;
-    }
-    .Activites-a-Marseille{
-        flex-direction: column;
-    }
-    .footer{
-        flex-direction: column;
-    }
+
+.articulos__seccion2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 20rem;
+    align-items: center;
+}
+
+/* Articulos */
+
+.articulos__objeto {
+    background-color: white;
+    width: 15rem;
+    height: 15rem;
+    margin: 1rem;
+    text-decoration: none;
+    border-radius: 1.5rem;
+    padding: .5rem;
+}
+
+.articulos__img {
+    height: 65%;
+    width: 100%;
+    border-top-right-radius: 1.5rem;
+    border-top-left-radius: 1.5rem;
+}
+
+.articulos__titulo {
+    margin: 5px;
+}
+
+.articulos__resena {
+    margin: 5px;
+}
+
+.articulos__icono {
+    margin: 5px;
+}
+
+/* Fin de articulos */
+
+.aside {
+    width: 15rem;
+    height: 40rem;
+    background: rgb(61, 60, 60);
+    float: right;
+}
+#bloc_page{
+    width: 900px;
+    margin: auto;
 }

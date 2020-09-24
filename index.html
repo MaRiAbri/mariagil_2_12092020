@@ -6,78 +6,211 @@
     <title>Reservia</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a2e403aaa5.js" crossorigin="anonymous"></script>
 </head>
 
+
 <body>
-    <div class="container1">
+    <!-- Header -->
+    <div id="blog_page">
         <header class="header">
-            <div class="menu">
-                <div class="logo"></div>
-                <nav class="nav"></nav>
+            <!-- <div class="menu"> -->
+            <div class="logo">
+                <img class="logo_img" src="images/logo/Reservia@3x.png" alt="Logo de Reservia">
             </div>
-            <section class="section">
-                <div class="texto-principal">
-                    <div class="title">
-                        <h1>Trovez votre herbegement pour des vacances de reves</h1>
-                        <p>En plein centre ville ou en plein nature</p>
-                    </div>
-                    <div class="busqueda">
-                        <input type="search" name="Contenedor" id="">
-                        <button type="submit">Recherche</button>
-                    </div>
-                    <div class="Filtres">
-                        <button type="submit">Economique</button>
-                        <button type="submit">Natural</button>
-                        <button type="submit">En plein centre</button>
-                        <button type="submit">En plein nature</button>
-                    </div>
-                </div>
-            </section>
-
+            <nav class="nav">
+                <ul class="nav_ul">
+                    <li class="nav_li">
+                        <a href="#">Hebergements</a>
+                    </li>
+                    <li class="nav_li">
+                        <a href="#">Activites</a>
+                    </li>
+                    <li class="nav_li">
+                        <a href="#">S'inscrire</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- </div> -->
         </header>
-        <section class="section">
-            <div class="articulos">
-                <div class="Herbegements-a-Marseille">
-                    <h1>Herbegements a Marseille</h1>
-                    <article class="articulo"></article>
-                    <article class="articulo"></article>
-                    <article class="articulo"></article>
-                    <article class="articulo"></article>
-                    <nav class="navegacion"></nav>
-                </div>
+        <!-- Fin header -->
+
+        <!-- Options -->
+
+        <section class="Options">
+            <h1 class="option_titulo">
+                Trovez votre herbegement pour des vacances de reves
+            </h1>
+            <h4 class="option_description">
+                En plein centre ville ou en plein nature
+            </h4>
+
+            <div class="options_recherche">
+                <button class="options_recherche_maps">
+                    <i class="fas fa-map-marker"></i>
+                </button>
+                <input type="search" name="Contenedor" id="" class="option_recherche__search">
+                <button type="submit" class="options_recherche_submit">
+                    Recherche
+                </button>
             </div>
-            <aside class="aside">
-                <div class="publicite">
-                    <h1>Les plus populaires</h1>
-                    <div class="les-plus-populaires"></div>
-                    <div class="les-plus-populaires"></div>
-                    <div class="les-plus-populaires"></div>
-                </div>
-            </aside>
-        </section>
-        <section class="section">
-            <div class="articulo">
-                <div class="Activites-a-Marseille">
-                    <h1>Activites a Marseille</h1>
-                    <article class="articulo"></article>
-                    <article class="articulo"></article>
-                    <article class="articulo"></article>
-                    <article class="articulo"></article>
-                    <article class="articulo"></article>
-                    <article class="articulo"></article>
 
-                </div>
+            <div class="options_filtres">
+                <p class="options_filtres_title">
+                    Filtres
+                </p>
+                <button class="options_filtres_title" type="submit">
+                    <div class="options_filtres--icono">
+                        <i class="fas fa-money-bill-wave-alt"></i>
+                    </div>
+                    Economique
+                </button>
+                <button class="options_filtres_title" type="submit">
+                    <div class="options_filtres--icono">
+                        <i class="fas fa-money-bill-wave-alt"></i>
+                    </div>
+                    Naturel
+                </button>
+                <button class="options_filtres_title" type="submit">
+                    <div class="options_filtres--icono">
+                        <i class="fas fa-money-bill-wave-alt"></i>
+                    </div>
+                    En plein centre
+                </button>
+                <button class="options_filtres_title" type="submit">
+                    <div class="options_filtres--icono">
+                        <i class="fas fa-money-bill-wave-alt"></i>
+                    </div>
+                    En plein nature
+                </button>
+
             </div>
-        </section>
     </div>
+    </section>
 
-    <div footer class="footer">
-        <nav class="menu-footer"></nav>
-        <nav class="menu-footer"></nav>
-        <nav class="menu-footer"></nav>
+    <!-- Fin Options -->
+    <!-- Container -->
+    <div id="conteneur"></div>
+    <section class="articulos">
+        <!-- <div class="articulos__seccion1"> -->
+            <!-- Articulo 1 -->
+            <a href="#" class="articulos__objeto">
+                <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="" srcset=""
+                    class="articulos__img">
+                <h4 class="articulos__titulo">
+                    Auberge la Cannebière
+                </h4>
+                <p class="articulos__resena">
+                    Nuit á partir de <b>25€</b>
+                </p>
+                <div class="articulos__icono">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </a>
+            <!-- Articulo 2 -->
+            <a href="#" class="articulos__objeto">
+                <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="" srcset=""
+                    class="articulos__img">
+                <h4 class="articulos__titulo">
+                    Auberge la Cannebière
+                </h4>
+                <p class="articulos__resena">
+                    Nuit á partir de <b>25€</b>
+                </p>
+                <div class="articulos__icono">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </a>
+            <!-- Articulo 1 -->
+            <a href="#" class="articulos__objeto">
+                <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="" srcset=""
+                    class="articulos__img">
+                <h4 class="articulos__titulo">
+                    Auberge la Cannebière
+                </h4>
+                <p class="articulos__resena">
+                    Nuit á partir de <b>25€</b>
+                </p>
+                <div class="articulos__icono">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </a>
+        <!-- </div> -->
+        <!-- <div class="articulos__seccion2"> -->
+            <!-- Articulo 1 -->
+            <a href="#" class="articulos__objeto">
+                <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="" srcset=""
+                    class="articulos__img">
+                <h4 class="articulos__titulo">
+                    Auberge la Cannebière
+                </h4>
+                <p class="articulos__resena">
+                    Nuit á partir de <b>25€</b>
+                </p>
+                <div class="articulos__icono">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </a>
+            <!-- Articulo 1 -->
+            <a href="#" class="articulos__objeto">
+                <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="" srcset=""
+                    class="articulos__img">
+                <h4 class="articulos__titulo">
+                    Auberge la Cannebière
+                </h4>
+                <p class="articulos__resena">
+                    Nuit á partir de <b>25€</b>
+                </p>
+                <div class="articulos__icono">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </a>
+            <!-- Articulo 1 -->
+            <a href="#" class="articulos__objeto">
+                <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="" srcset=""
+                    class="articulos__img">
+                <h4 class="articulos__titulo">
+                    Auberge la Cannebière
+                </h4>
+                <p class="articulos__resena">
+                    Nuit á partir de <b>25€</b>
+                </p>
+                <div class="articulos__icono">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </a>
+        <!-- </div> -->
+    </section>
+
+    <aside class="aside">
+        <article class="aside__objeto"></article>
+        <article class="aside__objeto"></article>
+        <article class="aside__objeto"></article>
+    </aside>
     </div>
-
-
 </body>
-
-</html>
