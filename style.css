@@ -79,12 +79,27 @@ font-size: 16px;
     margin: 0;
 font-size: 12px;
 } */
-.options_recherche{
+.options_recherche {
+    margin : 0 ;
+}
+.options_recherche_button {
+    margin : 0 ;
+}
+.options_filtres {
+    display : flex;
+    margin : 5 px ;
+}
+/* .options_recherche{
     margin: 0;
 }
 .options_recherche_button{
     margin: 0;
+    width: 20px;
 }
+.options_recherche_button i{
+    width: 15px;
+} */
+
 .options_filtres {
     display: flex;
     margin: 5px;
@@ -99,8 +114,8 @@ font-size: 12px;
     justify-content: center;
     align-content: center;
     position: relative;
-    width: auto;
-    height: 2rem;
+    width: 35%;
+    height: 1.8rem;
     border-radius: 100rem;
     margin: 10px;
     background-color: white;
@@ -320,7 +335,6 @@ body > section.activites > div > div:nth-child(3) > article > h4{
     padding-top: 5px;
     padding: 3px;
     height: 100%;
-    width: 100%;
     box-sizing: border-box;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
@@ -344,7 +358,6 @@ body > section.activites > div > div:nth-child(3) > article > h4{
     margin: 2px;
     padding-top: 5px;
     padding: 3px;
-    height: 90%;
     width: 100%;
     box-sizing: border-box;
     border-top-right-radius: 20px;
