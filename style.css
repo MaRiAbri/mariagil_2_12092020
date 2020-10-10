@@ -311,12 +311,14 @@ body>section.activites>div>div:nth-child(3)>article>h4 {
 .activites_a_marseille_1 {
     display: flex;
     flex-direction: column;
+   
     background: white;
     border-radius: 20px;
     margin-left: 5%;
 }
 
 .a_marseille_1 {
+    flex-grow: 1;
     width: 25%;
     margin: 5px;
     padding-bottom: 9%;
