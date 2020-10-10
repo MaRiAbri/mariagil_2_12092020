@@ -376,7 +376,11 @@ body > section.activites > div > div:nth-child(3) > article > h4{
     height: 100%;
 }
 
-/* .ul {
-
-  
-} */
+.footer ul{
+ padding-left: 0;
+ list-style: none;
+}
+.footer ul li{
+    padding-left: 0;
+    list-style: none;
+   } 
