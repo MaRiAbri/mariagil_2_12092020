@@ -71,7 +71,6 @@ header {
     flex-direction: column;
     margin-left: 0;
 }
-
 /* .options h1{
     margin: 0;
 font-size: 16px;
@@ -81,35 +80,46 @@ font-size: 16px;
 font-size: 12px;
 } */
 .options_recherche {
-    margin: 0;
+    margin : 0 ;
 }
-
 .options_recherche_button {
+    margin : 0 ;
+}
+.options_filtres {
+    display : flex;
+    margin : 5 px ;
+}
+/* .options_recherche{
     margin: 0;
 }
+.options_recherche_button{
+    margin: 0;
+    width: 20px;
+}
+.options_recherche_button i{
+    width: 15px;
+} */
 
 .options_filtres {
     display: flex;
     margin: 5px;
 }
 
-.body>section.options>div.options_filtres>p>b {
+.body > section.options > div.options_filtres > p > b{
     margin: 50 0 0 0;
     align-content: center;
 }
-
 .options_filtres_title {
     display: flex;
     justify-content: center;
     align-content: center;
     position: relative;
-    width: auto;
-    height: 2rem;
+    width: 35%;
+    height: 1.8rem;
     border-radius: 100rem;
     margin: 10px;
     background-color: white;
 }
-
 .options_filtres_title h3 {
     display: block;
     margin-left: 40px;
@@ -120,7 +130,6 @@ font-size: 12px;
     margin-inline-end: 0px; */
     font-weight: bold;
 }
-
 .options_filtres_icono {
     width: 44px;
     height: 44px;
@@ -136,17 +145,14 @@ font-size: 12px;
     top: 14px;
     left: 14px;
 }
-
-.p_info {
+.p_info{
     display: flex;
     margin: 0 0 0 0;
 }
-
-.p_info i {
-
-    padding: 10ps;
+.p_info i{
+   
+padding:10ps;
 }
-
 /* Corps */
 .conteneur {
     /* background: grey; */
@@ -280,18 +286,16 @@ figure {
 }
 
 .activites {
-
+    background: #F2F2F2;
     border-radius: 20px;
     width: 95%;
     height: 500%;
     margin: auto;
 }
-
-.activites h1 {
+.activites h1{
     padding: 0 0 0 0;
 }
-
-.option_activites_marseille {
+.option_activites_marseille{
     display: flex;
     flex-wrap: wrap;
 }
@@ -301,24 +305,19 @@ figure {
     flex-direction: column;
     background: white;
     border-radius: 20px;
-    margin-left: 5%;
+    margin-left: 5%; 
 }
-
-body>section.activites>div>div:nth-child(3)>article>h4 {
+body > section.activites > div > div:nth-child(3) > article > h4{
     font-size: 0.5em;
 }
-
 .activites_a_marseille_1 {
     display: flex;
     flex-direction: column;
-   
     background: white;
     border-radius: 20px;
-    margin-left: 5%;
+    margin-left: 5%; 
 }
-
-.a_marseille_1 {
-    flex-grow: 1;
+.a_marseille_1{
     width: 25%;
     margin: 5px;
     padding-bottom: 9%;
@@ -329,22 +328,19 @@ body>section.activites>div>div:nth-child(3)>article>h4 {
     width: 250px;
     height: 300px;
     border-radius: 20px;
-    box-shadow: 0px 2px 5px 0px #f2f2f2;
 }
-
-.a_marseille_1_img {
+.a_marseille_1_img{
     overflow: hidden;
     margin: 2px;
     padding-top: 5px;
     padding: 3px;
     height: 100%;
-    width: 100%;
     box-sizing: border-box;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
 }
 
-.a_marseille {
+.a_marseille{
     width: 25%;
     margin: 5px;
     padding-bottom: 9%;
@@ -355,35 +351,36 @@ body>section.activites>div>div:nth-child(3)>article>h4 {
     width: 250px;
     height: 140px;
     border-radius: 20px;
-    box-shadow: 0px 2px 5px 0px #f2f2f2;
-}
 
-.a_marseille_img {
+}
+.a_marseille_img{
     overflow: hidden;
     margin: 2px;
     padding-top: 5px;
     padding: 3px;
-    height: 90%;
     width: 100%;
     box-sizing: border-box;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
 }
-
 /* Footer */
-.footer {
+footer {
     background-color: #F2F2F2;
     margin-top: 30px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 3px 5px;
-    border: 1px solid orangered;
+    /* border: 1px solid orangered; */
     width: 100%;
     height: 100%;
 }
 
-/* .ul {
-
-  
-} */
+footer ul{
+ padding-left: 0;
+ list-style: none;
+}
+footer ul li{
+    padding-left: 0;
+    list-style: none;
+   } 
