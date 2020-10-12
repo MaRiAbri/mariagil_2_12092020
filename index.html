@@ -32,34 +32,52 @@
     <section class="options">
         <h1 class="options_h1">Trouvez votre herbegement pour des vacances de reves</h1>
         <h4 class="options_description">En plein centre ville ou en plein nature</h4>
-        <div class="options_recherche">
-            <button class="options_recherche_button">
+        <!-- ESTO ES UN FORMULARIO DE BUSQUEDA -->
+        <!-- table -->
+        <table>
+            <!-- <tr>
+                <td><label for="opciones__busqueda--search ">
+                    <i class="fas fa-map-marker"></i></label></td>
+                <td><input type="search" name="Contenedor" id="opciones__busqueda--search" class="opciones__busqueda--search"></td>
+                <td><button class="options_recherche_submit"> Recherche</button></td>
+            </tr>
+        </table> -->
+            <!-- Buttons -->
+            <div class="options_recherche">
+                <!-- <button class="options_recherche_button">
                 <i class="fas fa-map-marker"></i>
-            </button>
-            <input type="search" name="Contenedor" id="" class="opciones__busqueda--search">
-            <button class="options_recherche_submit"> Recherche</button>
-        </div>
-        <div class="options_filtres">
-            <p><b>Filtres</b></style>
-            </p>
-            <button class="options_filtres_title" type="submit">
-                <div class="options_filtres_icono"><i class="fas fa-money-bill-wave-alt"></i></div>
-                <h3>Economique</h3>
-            </button>
-            <button class="options_filtres_title" type="submit">
-                <div class="options_filtres_icono"><i class="fas fa-child"></i></div>
-                <h3>Familial</h3>
-            </button>
-            <button class="options_filtres_title" type="submit">
-                <div class="options_filtres_icono"><i class="fas fa-heart"></i></div>
-                <h3>Romantique</h3>
-            </button>
-            <button class="options_filtres_title" type="submit">
-                <div class="options_filtres_icono"><i class="fas fa-paw"></i></div>
-                <h3>Animaux autorisés</h3>
-            </button>
-        </div>
-        <p class="p_info"><i class="fas fa-info-circle"></i>Plus de 500 logements dans cette ville</p>
+            </button> -->
+                <label for="opciones__busqueda--search ">
+                    <i class="fas fa-map-marker"></i></label>
+                <!-- Aquí no se utiliza la clase. Hay que utilizar id -->
+                <!-- utilizando un span -->
+                <span><i class="fas fa-map-marker"></i></span>
+                <input type="search" name="Contenedor" id="opciones__busqueda--search"
+                    class="opciones__busqueda--search">
+
+                <button class="options_recherche_submit"> Recherche</button>
+            </div>
+            <div class="options_filtres">
+                <p><b>Filtres</b></style>
+                </p>
+                <button class="options_filtres_title" type="submit">
+                    <div class="options_filtres_icono"><i class="fas fa-money-bill-wave-alt"></i></div>
+                    <h3>Economique</h3>
+                </button>
+                <button class="options_filtres_title" type="submit">
+                    <div class="options_filtres_icono"><i class="fas fa-child"></i></div>
+                    <h3>Familial</h3>
+                </button>
+                <button class="options_filtres_title" type="submit">
+                    <div class="options_filtres_icono"><i class="fas fa-heart"></i></div>
+                    <h3>Romantique</h3>
+                </button>
+                <button class="options_filtres_title" type="submit">
+                    <div class="options_filtres_icono"><i class="fas fa-paw"></i></div>
+                    <h3>Animaux autorisés</h3>
+                </button>
+            </div>
+            <p class="p_info"><i class="fas fa-info-circle"></i>Plus de 500 logements dans cette ville</p>
     </section>
 
     <div class="conteneur">
@@ -194,8 +212,9 @@
                         class="les_plus_populaires_image" srcset="">
                 </figure>
                 <div class="pepito">
+
                     <h4 class="hebergement_text_principel">Auberge la Cannebière</h4>
-                    <p class="hebergement_text_secundaire">Nuit a partir de <b>25€</b></p>
+                    <p class="hebergement_text_secundaire"> Nuit a partir de <b>25€</b></p>
                     <p id="etoiles">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -203,6 +222,7 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </p>
+
                 </div>
             </div>
             <div class="les_plus_populaires">
