@@ -238,7 +238,7 @@ body>div>section>h1 {
 
 .hotel h1 {
     font-size: 16px;
-    margin: 10px 0px 0px 50px;
+    margin: 10px 0px 0px 15px;
     padding: 0 0 0 0;
 }
 
@@ -352,8 +352,9 @@ body>section>div.conteneur>section>li {
 
 .aside h1 {
     font-size: 16px;
-    margin: 10px 0px 0px 50px;
+    margin: 10px 0px 3px 15px;
     padding: 0 0 0 0;
+    display: inline-block;
 }
 
 body>div>aside>div:nth-child(2)>div {
