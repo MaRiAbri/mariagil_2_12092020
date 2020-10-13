@@ -18,11 +18,10 @@ body {
 
 /* Header */
 header {
-    background-color: white;
     height: 80px;
     width: 100%;
     display: flex;
-    margin-right: 3%;
+    /* margin-right: 3%; */
     justify-content: space-between;
     margin-left: 0;
    
@@ -376,13 +375,20 @@ body>div>aside>h1 {
 .les_plus_populaires_image {
     overflow: hidden;
     display: inline-block;
-    margin: 2px;
-    padding-top: 5px;
+    margin: 0px 20px 2px 2px;
     height: 100%;
     border-bottom-left-radius: 20%;
     border-top-left-radius: 20%;
 }
-
+.populaires_text_principel {
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0px;
+    position: relative;
+    margin: 2px 0px 0px 12px;
+    text-align: left;
+    padding: 20px 5px 0px 3px
+}
 .activites {
 
     border-radius: 20px;

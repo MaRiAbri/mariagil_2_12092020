@@ -45,16 +45,19 @@
             <!-- Buttons -->
             <div class="options_recherche">
                
-                <button class="options_recherche_button">
+                <!-- <button class="options_recherche_button">
                 <i class="fas fa-map-marker"></i>
-            </button>
-                <!-- <label for="opciones__busqueda--search ">
-                    <i class="fas fa-map-marker"></i></label> -->
+            </button> -->
+            <form action="opciones__busqueda--search">
+                <label for="opciones__busqueda--search ">
+                    <button class="options_recherche_button">
+                        <i class="fas fa-map-marker"></i>
+                    </button></i></label>
                 <!-- Aquí no se utiliza la clase. Hay que utilizar id -->
                 <!-- utilizando un span -->
                                 <input type="search" name="Contenedor" id="opciones__busqueda--search">
 
-                <button class="options_recherche_submit"> Recherche</button>
+                <label for="options_recherche_submit"><button class="options_recherche_submit"> Recherche</button></label></form>
             </div>
             <div class="options_filtres">
                 <p><b>Filtres</b></style>
@@ -193,7 +196,7 @@
                         class="les_plus_populaires_image" srcset="">
                 </figure>
                 <div class="pepito">
-                    <h4 class="hebergement_text_principel">Auberge la Cannebière</h4>
+                    <h4 class="populaires_text_principel">Auberge la Cannebière</h4>
                     <p class="hebergement_text_secundaire">Nuit a partir de <b>25€</b></p>
                     <p id="etoiles">
                         <i class="fas fa-star"></i>
@@ -212,7 +215,7 @@
                 </figure>
                 <div class="pepito">
 
-                    <h4 class="hebergement_text_principel">Auberge la Cannebière</h4>
+                    <h4 class="populaires_text_principel">Auberge la Cannebière</h4>
                     <p class="hebergement_text_secundaire"> Nuit a partir de <b>25€</b></p>
                     <p id="etoiles">
                         <i class="fas fa-star"></i>
@@ -230,7 +233,8 @@
                         class="les_plus_populaires_image" srcset="">
                 </figure>
                 <div class="pepito">
-                    <h4 class="hebergement_text_principel">Auberge la Cannebière</h4>
+                    <!-- En este elemento he formateado el texto principal, pero tengo la clase "pepito con la que puedo formatear la gobalidad del texto y la imagen en lugar de dar una clase a cada cosa?" -->
+                    <h4 class="populaires_text_principel">Auberge la Cannebière</h4>
                     <p class="hebergement_text_secundaire">Nuit a partir de <b>25€</b></p>
                     <p id="etoiles">
                         <i class="fas fa-star"></i>
