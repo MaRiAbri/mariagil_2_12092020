@@ -2,13 +2,17 @@
     font-size: 1.5em;
     padding: 5px;
 } */
-
-p {
-    font-size: 16px;
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
 }
+/* p {
+    font-size: 16px;
+} */
 
 body {
-    font-family: 'Raleway', sans-serif;
+    
     width: 100%;
     height: 100%;
     /* box-sizing: border-box; */
@@ -174,20 +178,17 @@ border-bottom-right-radius: 29px;
 .options_filtres_title h3 {
     display: block;
     margin-left: 40px;
+    padding: 10px;
     font-size: 1.17em;
-    /* margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 15px;
-    margin-inline-end: 0px; */
     font-weight: bold;
 }
 
 .options_filtres_icono {
-    width: 44px;
-    height: 44px;
+    width: 40px;
+    height: 40px;
     background-color: #0065fc;
     color: white;
-    border-radius: 1600px;
+    border-radius: 2000px;
     position: absolute;
     left: 0;
 }
@@ -228,11 +229,11 @@ body>div>section>h1 {
     background-color: #F2F2F2;
     display: flex;
     flex-direction: column;
-    align-content: center;
+    align-items: space-between;
     border-radius: 20px;
     margin-right: 1%;
-    padding: 2%;
-    width: 70%;
+    padding: 10px 0px;
+    width: 65%;
 }
 
 .hotel h1 {
@@ -243,24 +244,28 @@ body>div>section>h1 {
 
 .offre {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
     border-radius: 20px;
-    padding: 0.5em;
+    /* padding: 0.5em; */
     width: 100%;
 
 }
 
 .hebergement {
 
-    width: 30%;
+    /* width: 30%; */
     margin: 5px;
     padding-bottom: 9%;
     margin-bottom: 2%;
     background: white;
     /* flex-wrap: wrap; */
+    flex-grow: 0.7;
     align-content: center;
-    width: 250px;
+    width: 240px;
     height: 110px;
     border-radius: 20px;
 
@@ -338,9 +343,9 @@ body>section>div.conteneur>section>li {
 .aside {
     background: #F2F2F2;
     display: flex;
-    align-content: center;
+    align-items: center;
     flex-direction: column;
-    width: 30%;
+    width: 25%;
     border-radius: 20px;
     padding: 0.5em;
 }
