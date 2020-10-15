@@ -2,47 +2,67 @@
     font-size: 1.5em;
     padding: 5px;
 } */
-*{
+html {
+
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+* {
     margin: 0;
     padding: 0;
     font-family: 'Raleway', sans-serif;
 }
-/* p {
-    font-size: 16px;
-} */
+
+
 
 body {
-    
+    align-content: center;
     width: 100%;
     height: 100%;
-    /* box-sizing: border-box; */
+  
 }
 
 /* Elements principaux de la page */
 
 /* Header */
 header {
-    height: 80px;
-    width: 100%;
     display: flex;
-    /* margin-right: 3%; */
     justify-content: space-between;
+    align-items: flex-start;
+    height: 60px;
+    width: 100%;
     margin-left: 0;
-   
+
 }
 
-body>section.options {
-    width: 100%;
-    padding-left: 40px;
-    padding-right: 40px;
-}
+
 
 .logo {
     width: 140px;
     height: 100%;
     padding-left: 90px;
-    
-  
+
 }
 
 .logo__img {
@@ -73,11 +93,13 @@ body>section.options {
     text-decoration: none;
     margin: 0 20px;
     padding: 20px 0;
-    
+
 }
-.nav_li:hover{
-    border-top: 1px solid black ;
+
+.nav_li:hover {
+    border-top: 1px solid black;
 }
+
 /* ink, active, hover, visited */
 .nav_a {
     text-decoration: none;
@@ -91,6 +113,8 @@ body>section.options {
 .options {
     display: flex;
     flex-direction: column;
+    width: 100%;
+   
     padding-left: 40px;
     padding-right: 40px;
 }
@@ -109,14 +133,6 @@ body>section.options>h4 {
     padding-right: 40px;
 }
 
-/* .options h1{
-    margin: 0;
-font-size: 16px;
-}
-.options h4{
-    margin: 0;
-font-size: 12px;
-} */
 .options_recherche {
     margin: 0px;
     padding-left: 40px;
@@ -128,29 +144,21 @@ font-size: 12px;
     border-top-left-radius: 29px;
     border-bottom-left-radius: 29px;
 }
-.options_recherche_submit{
-margin-left: 0px;
-border-top-right-radius: 29px;
-border-bottom-right-radius: 29px;
+
+.options_recherche_submit {
+    margin-left: 0px;
+    border-top-right-radius: 29px;
+    border-bottom-right-radius: 29px;
 }
-#opciones__busqueda--search{
+
+#opciones__busqueda--search {
     margin: 0px;
 }
+
 .options_filtres {
     display: flex;
     margin: 5 px;
 }
-
-/* .options_recherche{
-    margin: 0;
-}
-.options_recherche_button{
-    margin: 0;
-    width: 20px;
-}
-.options_recherche_button i{
-    width: 15px;
-} */
 
 .options_filtres {
     display: flex;
@@ -169,8 +177,8 @@ border-bottom-right-radius: 29px;
     justify-content: center;
     align-content: center;
     position: relative;
-    height: 1.8rem;
-    border-radius: 100rem;
+    height: auto;
+    border-radius: 2000px;
     margin: 10px;
     background-color: white;
 }
@@ -217,8 +225,9 @@ border-bottom-right-radius: 29px;
     /*  Para colocar el aside en primer lugar luego utilizaré en los media queris:  
      flex-direction: column-reverse;
      de esta manera el aside pasará en primer lugar en las versiones moviles */
-padding: 5px 40px 5px 40px;
-    height: 100%;
+    padding: 5px 40px 5px 40px;
+    height: auto;
+    width: 100%;
 }
 
 body>div>section>h1 {
@@ -229,7 +238,6 @@ body>div>section>h1 {
     background-color: #F2F2F2;
     display: flex;
     flex-direction: column;
-    align-items: space-between;
     border-radius: 20px;
     margin-right: 1%;
     padding: 10px 0px;
@@ -247,8 +255,10 @@ body>div>section>h1 {
     /* flex-direction: row;
     flex-wrap: wrap; */
     flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
+
+    align-content: space-around;
     border-radius: 20px;
     /* padding: 0.5em; */
     width: 100%;
@@ -256,17 +266,15 @@ body>div>section>h1 {
 }
 
 .hebergement {
-
-    /* width: 30%; */
+    display: flex;
+    flex-direction: column;
     margin: 5px;
-    padding-bottom: 9%;
     margin-bottom: 2%;
     background: white;
-    /* flex-wrap: wrap; */
     flex-grow: 0.7;
     align-content: center;
-    width: 240px;
-    height: 110px;
+    width: 252px;
+    height: 198px;
     border-radius: 20px;
 
 }
@@ -283,16 +291,16 @@ figure {
     border-top-left-radius: 20px;
 }
 
-.hebergement_image {
+/* .hebergement_image {
     margin: 2px;
     padding-top: 5px;
     padding: 3px;
-    height: 90%;
+    height: 100%;
     width: 100%;
     box-sizing: border-box;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
-}
+} */
 
 /* body > div > section > div > div:nth-child(1) > figure > img¨{
       overflow: hidden;
@@ -367,8 +375,8 @@ body>div>aside>div:nth-child(2)>div {
     display: flex;
     align-content: center;
     background: white;
-    width: 280px;
-    height: 120px;
+    width: 342px;
+    height: 144px;
     margin: 3px 3px 5px 5px;
     padding: 3px;
     border-radius: 20px;
@@ -386,6 +394,7 @@ body>div>aside>h1 {
     border-bottom-left-radius: 20%;
     border-top-left-radius: 20%;
 }
+
 .populaires_text_principel {
     font-size: 12px;
     font-weight: bold;
@@ -395,23 +404,28 @@ body>div>aside>h1 {
     text-align: left;
     padding: 20px 5px 0px 3px
 }
-.activites {
 
+.activites {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 1440px;
+    height: auto;
+    margin: 5px auto;
     border-radius: 20px;
-    width: 95%;
-    height: 500%;
-    margin: auto;
+    
 }
 
 .activites h1 {
     font-size: 16px;
-    margin: 10px 0px 0px 70px;
+    /* margin: 10px 0px 0px 70px; */
     padding: 0 0 0 0;
 }
 
 .option_activites_marseille {
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
+    justify-content: space-around;
 }
 
 .activites_a_marseille {
@@ -419,7 +433,6 @@ body>div>aside>h1 {
     flex-direction: column;
     background: white;
     border-radius: 20px;
-    margin-left: 5%;
     font-size: 12px;
 }
 
@@ -436,9 +449,10 @@ body>section.activites>div>div:nth-child(2)>article:nth-child(2)>h4 {
 .activites_a_marseille_1 {
     display: flex;
     flex-direction: column;
+    width: 250px;
+    height: 300px;
     background: white;
     border-radius: 20px;
-    margin-left: 5%;
     font-size: 12px;
 }
 
@@ -504,8 +518,8 @@ footer {
     justify-content: space-between;
     padding: 3px 5px;
     /* border: 1px solid orangered; */
-    width: 100%;
-    height: 100%;
+    width: 1440px;
+    height: auto;
 }
 
 footer ul {
