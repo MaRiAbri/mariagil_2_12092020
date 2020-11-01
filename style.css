@@ -147,7 +147,7 @@ body>section.options>h4 {
 }
 
 .options_recherche {
-    margin: 10px 0px ;
+    margin: 10px 0px;
     padding-left: 40px;
     padding-right: 40px;
 }
@@ -156,7 +156,7 @@ body>section.options>h4 {
     margin: 0px;
     width: 30px;
     height: 30px;
-    border-color:rgb(223, 221, 221);
+    border-color: rgb(223, 221, 221);
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
@@ -170,7 +170,7 @@ body>section.options>h4 {
     background-color: #0065fcc7;
     border-color: #0065fcc7;
     color: white;
-    
+
 }
 
 #opciones__busqueda--search {
@@ -178,20 +178,20 @@ body>section.options>h4 {
     height: 30px;
     position: relative;
     left: -5px;
-    
-}
 
-.options_filtres {
-    display: flex;
-    margin: 5 px;
 }
 
 .options_filtres {
     display: flex;
     align-content: center;
     margin: 5px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.options_filtres p {
+    padding-top: 20px;
+    margin: 0px -20px 0px 0px;
 }
 
 .body>section.options>div.options_filtres>p>b {
@@ -211,16 +211,18 @@ body>section.options>h4 {
     border-radius: 2000px;
     margin: 10px;
     background-color: white;
-    
+    border-width: 1px;
+    border-color: rgb(133, 133, 133);
 }
 
+
 .options_filtres_title h3 {
-    /* display: block; */
+
     margin-left: 40px;
     padding: 10px;
     font-size: 1.17em;
     font-weight: bold;
-    
+
 }
 
 .options_filtres_icono {
@@ -365,11 +367,13 @@ figure {
 #etoiles i {
     font-size: 10px;
 }
-.ancle{
+
+.ancle {
     padding-left: 20px;
     font-size: 12px;
     font-weight: bold;
 }
+
 body>div>section>li {
     list-style: none;
 }
@@ -562,10 +566,12 @@ footer ul {
     padding: 10px 50px;
     list-style: none;
 }
-footer ul h3{
+
+footer ul h3 {
     font-size: 12px;
     font-weight: bold;
 }
+
 footer ul li {
     font-size: 10px;
     padding-left: 0;
