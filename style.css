@@ -7,11 +7,7 @@ html {
     font-size: 16px;
 }
 
-*,
-*:before,
-*:after {
-    /*! box-sizing: inherit; */
-}
+
 
 body,
 h1,
@@ -36,6 +32,7 @@ ul {
 img {
     max-width: 100%;
     height: auto;
+    /*! position: relative; */
 }
 
 
@@ -53,6 +50,8 @@ body {
     width: 100%;
     height: 100%;
 
+    display: flex;
+    flex-flow: wrap;
 }
 
 /* Elements principaux de la page */
@@ -64,7 +63,7 @@ header {
     align-items: flex-start;
     height: 60px;
     width: 100%;
-    margin-left: 0;
+    /*! margin-left: 0; */
 
 }
 
@@ -73,7 +72,7 @@ header {
 .logo {
     width: 140px;
     height: 100%;
-    padding-left: 40px;
+    padding-left: 100px;
 
 }
 
@@ -95,8 +94,8 @@ header {
     list-style-type: none;
     font-size: 15px;
     height: 100%;
-    padding: 0px 0px 0px 0px;
-    margin: 0px;
+    /*! padding: 0px 0px 0px 0px; */
+    /*! margin: 0px; */
 }
 
 .nav_li {
@@ -126,8 +125,8 @@ header {
     flex-direction: column;
     width: 100%;
 
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 100px;
+    /*! padding-right: 40px; */
 }
 
 body>section.options>h1 {
@@ -183,13 +182,12 @@ body>section.options>h4 {
 .options_filtres {
     display: flex;
     align-content: center;
-    margin: 5px;
+    flex-flow: wrap;
     /*! padding-left: 15px; */
     padding-right: 15px;
 }
 
 .options_filtres p {
-    padding-top: 20px;
     margin: 0px -20px 0px 0px;
     font-weight: bold;
     font-size: 14px;
@@ -254,7 +252,7 @@ body>section.options>h4 {
 
 .p_info {
     display: flex;
-    margin: 15px 0px;
+    padding: 15px 0px;
     font-size: 12px;
 }
 
@@ -271,7 +269,8 @@ body>section.options>h4 {
      de esta manera el aside pasará en primer lugar en las versiones moviles */
     padding: 5px 40px 5px 40px;
     height: auto;
-    width: 100%;
+    width: 95%;
+    justify-content: center;
 }
 
 body>div>section>h1 {
@@ -297,7 +296,7 @@ body>div>section>h1 {
 
 .offre {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: wrap;
     justify-content: space-around;
     border-radius: 20px;
     padding: 0.5em;
@@ -311,13 +310,14 @@ body>div>section>h1 {
     margin: 5px;
     margin-bottom: 2%;
     background: white;
-    flex-grow: 0.7;
+    /*! flex-grow: 0.7; */
     align-content: center;
     width: 30%;
     height: 220px;
     border-radius: 20px;
 
     margin-right: 18px;
+    /*! position: relative; */
 }
 
 /* figure {
@@ -331,10 +331,8 @@ body>div>section>h1 {
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
 } */
-.imag_hotel{
+.imag_hotel {
     overflow: hidden;
-    margin: 2px;
-    padding-top: 5px;
     padding: 3px;
     height: auto;
     width: 100%;
@@ -342,17 +340,20 @@ body>div>section>h1 {
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
 }
-.img_aside{
+
+.img_aside {
     overflow: hidden;
     padding: 3px;
     height: auto;
     max-width: 50%;
-    box-sizing: border-box;
+    /*! box-sizing: border-box; */
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
 
+    /*! position: relative; */
 }
-.img_activites_large{
+
+.img_activites_large {
     overflow: hidden;
     height: 360px;
     max-width: 100%;
@@ -360,18 +361,20 @@ body>div>section>h1 {
     border-top-left-radius: 20px;
     display: flex;
 }
-.imag_activites_courte{
+
+.imag_activites_courte {
     overflow: hidden;
     width: 100%;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
     height: 150px;
+    box-sizing: border-box;
+    position: relative;
 }
+
 .hebergement_image {
-    padding: 3px;
     height: 100%;
     width: 100%;
-    box-sizing: border-box;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
 }
@@ -448,21 +451,16 @@ body>section>div.conteneur>section>li {
     font-weight: bold;
 }
 
-body>div>aside>div:nth-child(2)>div {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
-}
 
 .les_plus_populaires {
     display: flex;
     background: white;
-    width: 95%;
+    width: 90%;
     height: 125px;
     padding: 5px;
     border-radius: 20px;
-    
     margin-top: 20px;
+    justify-content: center;
 }
 
 body>div>aside>h1 {
@@ -470,31 +468,39 @@ body>div>aside>h1 {
 }
 
 .les_plus_populaires_image {
-
     overflow: hidden;
     display: inline-block;
     width: 140px;
-    margin: 0px 5px 2px 2px;
     height: 100%;
-    border-bottom-left-radius: 20%;
-    border-top-left-radius: 20%;
+    border-bottom-left-radius: 15%;
+    border-top-left-radius: 15%;
+}
+
+.pepito{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
 }
 
 .populaires_text_principel {
     font-size: 12px;
     font-weight: bold;
-    padding: 0px;
-    position: relative;
-    margin: 2px 0px 0px 12px;
+
     text-align: left;
-    padding: 20px 5px 0px 3px
+    padding: 20px 5px 0px 3px;
+}
+
+.populaires_text_secundaire {
+    font-size: 10px;
+    text-align: left;
+    padding: 10px 5px 25px 3px;
 }
 
 .activites {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    width: 95%;
+    justify-content: center;
+    width: 100%;
     height: 100%;
     border-radius: 20px;
 
@@ -503,24 +509,22 @@ body>div>aside>h1 {
 .activites h1 {
     font-size: 16px;
     font-weight: bold;
-    margin: 10px 0px 0px 50px;
-    padding: 0 0 0 0;
+    margin: 10px 0px 0px 10px;
+    padding: 30px 0px 30px 90px;
 }
 
 .option_activites_marseille {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    padding-left: 40px;
+    justify-content: space-around;
+    padding-left: 60px;
+    flex-flow: wrap;
+    padding-right: 60px;
 }
 
 .activites_a_marseille {
     display: flex;
     flex-direction: column;
-    background: white;
-    border-radius: 20px;
     font-size: 12px;
-    \.a_marseille_1\ \{\ margin-bottom: 2%;
     background: white;
     width: 300px;
     height: 100%;
@@ -530,7 +534,7 @@ body>div>aside>h1 {
 .activites_text_principel {
     position: relative;
     font-weight: bold;
-    margin: 25px 10px 25px 12px;
+    margin: 22px 10px 20px 12px;
     text-align: left;
     font-size: 12px;
 }
@@ -550,10 +554,9 @@ body>section.activites>div>div:nth-child(2)>article:nth-child(2)>h4 {
 }
 
 .a_marseille_1 {
-    /*! margin-bottom: 2%; */
     background: white;
-    width: 300px;
-    height: 100%;
+    width: 280px;
+    height: 96%;
     border-radius: 20px;
     box-shadow: 0px 2px 7px 0px rgb(128, 121, 123);
 }
@@ -572,7 +575,7 @@ body>section.activites>div>div:nth-child(2)>article:nth-child(2)>h4 {
 
 .a_marseille {
     /*! padding-bottom: 9%; */
-    margin-bottom: 2%;
+    margin-bottom: 15px;
     /*! width: 300px; */
     /*! max-height: 180px; */
     border-radius: 20px;
@@ -580,9 +583,11 @@ body>section.activites>div>div:nth-child(2)>article:nth-child(2)>h4 {
 
     width: 300px;
     height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
-/* .a_marseille_img {
+.a_marseille_img {
     overflow: hidden;
     margin: 2px;
     padding-top: 5px;
@@ -593,7 +598,7 @@ body>section.activites>div>div:nth-child(2)>article:nth-child(2)>h4 {
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
 
-} */
+}
 
 /* Footer */
 footer {
@@ -601,13 +606,13 @@ footer {
     margin-top: 70px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    width: 1440px;
+    justify-content: flex-start;
+    width: 100%;
     height: auto;
 }
 
 footer ul {
-    padding: 10px 50px;
+    padding: 10px 100px;
     list-style: none;
 }
 
