@@ -218,9 +218,8 @@ body>section.options>h4 {
     border-radius: 2000px;
     margin: 10px;
     background-color: white;
-    border-width: 0.5px;
-    border-color: rgba(187, 179, 179, 0.67);
-    border-color: rgb(133, 133, 133);
+    border-width: 0.3px;
+    border-color: rgb(58, 177, 204);
 }
 
 
@@ -234,9 +233,9 @@ body>section.options>h4 {
 }
 
 .options_filtres_icono {
-    width: 37px;
-    height: 37px;
-    background-color: #aed3e6c7;
+    width: 36px;
+    height: 36px;
+    background-color: rgba(158, 215, 244, 0.78);
     color: blue;
     font-size: 14px;
     border-radius: 2000px;
@@ -343,11 +342,10 @@ body>div>section>h1 {
 
 .img_aside {
     overflow: hidden;
-    padding: 3px;
     height: auto;
     max-width: 50%;
     /*! box-sizing: border-box; */
-    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
     border-top-left-radius: 20px;
 
     /*! position: relative; */
@@ -476,7 +474,7 @@ body>div>aside>h1 {
 .les_plus_populaires_image {
     overflow: hidden;
     display: inline-block;
-    width: 140px;
+    width: 150px;
     height: 100%;
     border-bottom-left-radius: 15%;
     border-top-left-radius: 15%;
@@ -617,18 +615,20 @@ footer {
 }
 
 footer ul {
-    padding: 10px 100px;
+    padding: 10px 150px;
     list-style: none;
 }
 
 footer ul h3 {
     font-size: 14px;
     font-weight: bold;
+    padding-bottom: 6px;
+    padding-top: 20px;
 }
 
 footer ul li {
     font-size: 12px;
-    padding-left: 0;
+    padding-bottom: 5px;
     list-style: none;
 }
 
