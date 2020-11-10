@@ -402,7 +402,7 @@ body>div>section>h1 {
 .hebergement_text_secundaire {
     font-weight: normal;
     font-size: 10px;
-    margin: 0px 0px 7px 12px;
+    margin: 3px 0px 7px 10px;
     padding: 3px;
 }
 
@@ -443,10 +443,15 @@ body>section>div.conteneur>section>li {
     max-width: 30%;
     justify-content: flex-start;
 }
-
+.title_aside{
+    display: flex;
+    font-size: 16px;
+    margin: 18px 24px 0px 15px;
+    justify-content: space-between;
+}
 .aside h1 {
     font-size: 16px;
-    margin: 18px 0px 0px 15px;
+    /* margin: 18px 0px 0px 15px; */
     /*! padding: 0 0 0 0; */
 
     font-weight: bold;
@@ -522,7 +527,7 @@ body>div>aside>h1 {
     justify-content: space-around;
     padding-left: 60px;
     flex-flow: wrap;
-    padding-right: 60px;
+    padding-right: 62px;
 }
 
 .activites_a_marseille {
@@ -634,7 +639,9 @@ footer ul li {
     width: 140px;
     height: 100%;
     padding-left: 50px;
+    padding-top: 9px;
 }
+
     .options {
         display: flex;
         flex-direction: column;
@@ -670,6 +677,14 @@ footer ul li {
         font-weight: bold;
         font-size: 12px;
     }
+    .offre {
+        display: flex;
+        flex-flow: wrap;
+        justify-content: center;
+        border-radius: 20px;
+        padding: 0.5em;
+        width: 100%;
+    }
     .hotel {
         background-color: RGB(242, 242, 242);
         display: flex;
@@ -683,6 +698,19 @@ footer ul li {
         padding: 10px 0px;
         max-width: 100%;
     }
+    .hebergement {
+        display: flex;
+        flex-direction: column;
+        margin: 5px;
+        margin-bottom: 2%;
+        background: white;
+        flex-grow: 0.7;
+        align-content: center;
+        width: 45%;
+        height: 220px;
+        border-radius: 20px;
+        margin-right: 18px;
+    }
     .aside {
         background: RGB(242, 242, 242);
         display: flex;
@@ -691,8 +719,18 @@ footer ul li {
         padding: 8px 8px 8px 8px;
         margin-left: 5px;
         margin-bottom: 25px;
-        max-width: 60%;
+        max-width: 100%;
         justify-content: flex-start;
+    }
+    .les_plus_populaires {
+        display: flex;
+        background: rgb(255, 255, 255);
+        width: 98%;
+        height: 125px;
+        padding: 5px;
+        border-radius: 20px;
+        margin-top: 20px;
+        justify-content: center;
     }
     .les_plus_populaires_image {
         overflow: hidden;
@@ -705,6 +743,13 @@ footer ul li {
     footer ul {
         padding: 55px;
         list-style: none;
+    }
+    .option_activites_marseille {
+        display: flex;
+        justify-content: space-around;
+        padding-left: 40px;
+        flex-flow: wrap;
+        padding-right: 40px;
     }
     .hotel {
         
