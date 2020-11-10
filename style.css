@@ -310,7 +310,7 @@ body>div>section>h1 {
     margin: 5px;
     margin-bottom: 2%;
     background: white;
-    /*! flex-grow: 0.7; */
+    /* flex-grow: 0.7; */
     align-content: center;
     width: 30%;
     height: 220px;
@@ -477,7 +477,7 @@ body>div>aside>h1 {
     border-top-left-radius: 15%;
 }
 
-.pepito{
+.pepito {
     display: flex;
     flex-direction: column;
     justify-content: left;
@@ -626,3 +626,127 @@ footer ul li {
     padding-left: 0;
     list-style: none;
 }
+
+@media screen and (max-width: 768px) {
+    
+
+.logo {
+    width: 140px;
+    height: 100%;
+    padding-left: 50px;
+}
+    .options {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 40px;
+    }
+    
+    .conteneur {
+        flex-direction: column-reverse;
+    }
+
+    .options_filtres {
+        display: flex;
+        align-content: center;
+        flex-flow: wrap;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .options_filtres_icono {
+        width: 34px;
+        height: 34px;
+        background-color: rgba(174, 211, 230, 0.8);
+        color: rgb(0, 0, 255);
+        font-size: 14px;
+        border-radius: 2000px;
+        position: absolute;
+        left: 0;
+    }
+    .options_filtres_title h3 {
+        margin-left: 30px;
+        padding: 10px;
+        font-weight: bold;
+        font-size: 12px;
+    }
+    .hotel {
+        background-color: RGB(242, 242, 242);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-left: 15px;
+        flex-flow: wrap;
+        padding-right: 15px;
+        border-radius: 20px;
+        margin-right: 1%;
+        padding: 10px 0px;
+        max-width: 100%;
+    }
+    .aside {
+        background: RGB(242, 242, 242);
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+        padding: 8px 8px 8px 8px;
+        margin-left: 5px;
+        margin-bottom: 25px;
+        max-width: 60%;
+        justify-content: flex-start;
+    }
+    .les_plus_populaires_image {
+        overflow: hidden;
+        display: flex;
+        border-bottom-left-radius: 10%;
+        border-top-left-radius: 10%;
+        width: 300px;
+        height: 100%;
+    }
+    footer ul {
+        padding: 55px;
+        list-style: none;
+    }
+    .hotel {
+        
+    }
+    .menu {
+        flex-direction: column;
+    }
+
+   
+}
+
+@media screen and (max-width: 600px) {
+    .articulos {
+        flex-direction: column;
+    }
+
+    .Herbegements-a-Marseille {
+        flex-direction: column;
+    }
+
+    .Activites-a-Marseille {
+        flex-direction: column;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .articulos {
+        flex-direction: column;
+    }
+
+    .Herbegements-a-Marseille {
+        flex-direction: column;
+    }
+
+    .Activites-a-Marseille {
+        flex-direction: column;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
