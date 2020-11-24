@@ -2,47 +2,46 @@
     font-size: 1.5em;
     padding: 5px;
 } */
-html {
-    font-size: 16px;
+/* Esto es lo que ha hecho Thomas con el icono */
+.options_recherche_submit i{
+    display:none;
 }
 
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ol,
-ul {
-    margin: 0;
-    padding: 0;
-    font-weight: normal;
-}
-
-ol,
-ul {
-    list-style: none;
-}
-
-img {
-    max-width: 100%;
-}
-
+/* reset */
 * {
     margin: 0;
     padding: 0;
     font-family: "Raleway", sans-serif;
 }
-
+html {
+    font-size: 16px;
+}
 body {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
     align-content: center;
     width: 100%;
     height: 100%;
-
     display: flex;
     flex-flow: wrap;
+}
+
+h1,h2,h3,h4,h5,h6,p,ol,ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+ol,ul {
+    list-style: none;
+}
+a:link, a:visited, a:active {
+    text-decoration:none;
+    color:blue;
+}
+img {
+    max-width: 100%;
 }
 
 /* Elements principaux de la page */
@@ -70,10 +69,10 @@ header {
 
 /* Navigation */
 .nav {
-    height: 100%;
+    /*! height: 100%; */
     font-family: "Relaway", sans-serif;
     margin-right: 5%;
-    height: 80px;
+    height: 20px;
     display: flex;
 }
 
@@ -81,7 +80,7 @@ header {
     display: flex;
     list-style-type: none;
     font-size: 15px;
-    height: 100%;
+    height: 7em;
     /*! margin: 0px; */
 }
 
@@ -90,8 +89,14 @@ header {
     text-decoration: none;
     margin: 0 20px;
     padding: 45px 0;
+    text-decoration: none;
+    margin: 0 20px;
+    padding: 45px 0;
 }
-
+.nav_li_inscrire{
+    color: blue;
+    padding-top: 44px;
+}
 .nav_li:hover {
     border-top: 2px solid rgb(0, 0, 255);
 }
@@ -105,13 +110,14 @@ header {
 .nav_a:hover {
     color: blue;
 }
-
+.nav_a:visited{
+    color: blue;
+}
 /* Options */
 .options {
     display: flex;
     flex-direction: column;
     width: 100%;
-
     padding-left: 80px;
     /*! padding-right: 40px; */
 }
@@ -209,7 +215,6 @@ body>section.options>h4 {
     margin-left: 40px;
     padding: 10px;
     font-weight: bold;
-
     font-size: 14px;
 }
 
@@ -240,7 +245,8 @@ body>section.options>h4 {
     padding-right: 10px;
 }
 
-/* Corps */
+/* Hebergement et aside */
+
 .conteneur {
     display: flex;
     /*  Para colocar el aside en primer lugar luego utilizaré en los media queris:  
@@ -255,7 +261,7 @@ body>section.options>h4 {
 body>div>section>h1 {
     font-size: 18px;
 }
-
+/* Hebergement */
 .hotel {
     background-color: #f2f2f2;
     display: flex;
@@ -298,7 +304,8 @@ body>div>section>h1 {
     /*! position: relative; */
 }
 
-/* figure {
+/*ESta es la figura inicial que afectaba a todas las demás en el documento.
+ figure {
     overflow: hidden;
     margin: 2px;
     padding-top: 5px;
@@ -319,35 +326,9 @@ body>div>section>h1 {
     border-top-left-radius: 20px;
 }
 
-.img_aside {
-    overflow: hidden;
-    height: auto;
-    max-width: 50%;
-    /*! box-sizing: border-box; */
-    border-top-left-radius: 20px;
-    border-top-left-radius: 20px;
 
-    /*! position: relative; */
-}
 
-.img_activites_large {
-    overflow: hidden;
-    height: 360px;
-    max-width: 100%;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-    display: flex;
-}
 
-.imag_activites_courte {
-    overflow: hidden;
-    width: 100%;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-    height: 150px;
-    box-sizing: border-box;
-    position: relative;
-}
 
 .hebergement_image {
     height: 100%;
@@ -393,7 +374,7 @@ body>div>section>h1 {
 #etoiles i {
     font-size: 10px;
 }
-
+/*  enlace de hebergement */
 .ancle {
     padding-left: 20px;
     font-size: 12px;
@@ -408,6 +389,7 @@ body>div>section>li {
 body>section>div.conteneur>section>li {
     list-style: none;
 }
+/*  aside */
 
 .aside {
     background: #f2f2f2;
@@ -445,7 +427,16 @@ body>section>div.conteneur>section>li {
     margin-top: 20px;
     justify-content: center;
 }
+.img_aside {
+    overflow: hidden;
+    height: auto;
+    max-width: 50%;
+    /*! box-sizing: border-box; */
+    border-top-left-radius: 20px;
+    border-top-left-radius: 20px;
 
+    /*! position: relative; */
+}
 body>div>aside>h1 {
     font-size: 16px;
 }
@@ -458,7 +449,7 @@ body>div>aside>h1 {
     border-bottom-left-radius: 15%;
     border-top-left-radius: 15%;
 }
-
+/* clase del contenido en texto los mas populares */
 .pepito {
     display: flex;
     flex-direction: column;
@@ -481,7 +472,7 @@ body>div>aside>h1 {
     text-align: left;
     padding: 10px 5px 25px 30px;
 }
-
+/* Actividades */
 .activites {
     display: flex;
     flex-direction: column;
@@ -557,7 +548,24 @@ body>section.activites>div>div:nth-child(2)>article:nth-child(2)>h4 {
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
 } */
+.img_activites_large {
+    overflow: hidden;
+    height: 360px;
+    max-width: 100%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    display: flex;
+}
 
+.imag_activites_courte {
+    overflow: hidden;
+    width: 100%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    height: 150px;
+    box-sizing: border-box;
+    position: relative;
+}
 .a_marseille {
     /*! padding-bottom: 9%; */
     margin-bottom: 15px;
@@ -608,15 +616,16 @@ footer ul li {
     padding-bottom: 5px;
     list-style: none;
 }
-
+/*  Media para tablet */
 @media screen and (max-width: 768px) {
+    /* Header media tablet  */
     .logo {
         width: 140px;
-        height: 100%;
+        height: 70px;
         padding-left: 50px;
         padding-top: 22px;
     }
-
+/* Options media tablet*/
     .options {
         display: flex;
         flex-direction: column;
@@ -624,11 +633,6 @@ footer ul li {
         padding-left: 50px;
         padding-right: 40px;
     }
-
-    .conteneur {
-        flex-direction: column-reverse;
-    }
-
     .options_filtres {
         display: flex;
         align-content: center;
@@ -653,6 +657,10 @@ footer ul li {
         padding: 10px;
         font-weight: bold;
         font-size: 12px;
+    }
+/* Hebergement et aside media tablet*/
+    .conteneur {
+        flex-direction: column-reverse;
     }
 
     .offre {
@@ -723,12 +731,6 @@ footer ul li {
         width: 300px;
         height: 100%;
     }
-
-    footer ul {
-        padding: 55px;
-        list-style: none;
-    }
-
     .option_activites_marseille {
         display: flex;
         justify-content: space-around;
@@ -736,31 +738,84 @@ footer ul li {
         flex-flow: wrap;
         padding-right: 40px;
     }
+    /* Activites media tablet */
+
+    /* .a_marseille_1 {
+        padding-bottom: 9%;
+        margin-bottom: 15px;
+        width: 300px;
+        max-height: 180px;
+        border-radius: 20px;
+        box-shadow: 0px 2px 7px 0px rgb(57, 65, 68);
+        width: 300px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    } */
+    /* para modificar las imagenes largas y darles el mismo formato que a las cortas puedo utilizar el sector multiple, es decir:juntar las dos clases separadas por una coma y de esta manera puedo aplicar las mismas propiedasdes al bloque, imagenes,texto,ecetera  */
+    .a_marseille_1_img {
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+    }
+    /* .a_marseille_1 {
+        background: rgb(255, 255, 255);
+        width: 300px;
+        height: 96.5%;
+        border-radius: 20px;
+        box-shadow: 0px 2px 7px 0px rgb(128, 121, 123);
+    }   */
+.imag_activites_courte {
+    overflow: hidden;
+    height: 360px;
+    max-width: 100%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    display: flex;
+}
+.img_activites_large {
+    overflow: hidden;
+    width: 100%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    height: 150px;
+    box-sizing: border-box;
+    position: relative;
+}
+/* Footer media tablet */
+    footer ul {
+        padding: 55px;
+        list-style: none;
+    }
+    
 }
 
 @media screen and (max-width: 414px) {
-
+/* Header media movil */
     header {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        height: 100%;
+        height: 7em;
         width: 100%;
     }
 
     .logo {
-        padding: 0px;
+        padding: 10px 0px 20px 17px;
 
+        width: 100px;
+        height: 50px;
     }
 
     .logo__img {
-        width: 50%;
-        height: 50%;
+        width: 100%;
+        height:  100%;
     }
 
-    /* Navigation */
+    /* Navigation media movil*/
     .nav {
-
         font-family: "Relaway", sans-serif;
 
     }
@@ -769,23 +824,33 @@ footer ul li {
         display: flex;
         flex-direction: row-reverse;
         list-style-type: none;
-        font-size: 15px;
-
+        /*! font-size: 15px; */
         /*! margin: 0px; */
+        align-content: space-around;
     }
 
     .nav_li {
-        margin: 0 10px;
-        padding: 5px 0;
+        margin: 2em 1.1em;
+        padding: 0;
         color: black;
         text-decoration: none;
 
+        width: 180px;
+        text-align: center;
     }
 
     .nav_li:hover {
         border-bottom: 3px solid rgb(0, 0, 255);
+        border-top: none;
     }
-
+    
+    .nav_li_inscrire{
+         position: absolute;
+         top: -1em;
+         width: 100px;
+         right: 10px;
+         font-weight: bold;
+}
     /* ink, active, hover, visited */
     .nav_a {
         text-decoration: none;
@@ -795,6 +860,7 @@ footer ul li {
     .nav_a:hover {
         color: blue;
     }
+/* options media movil */
 
     .options {
         display: flex;
@@ -802,23 +868,29 @@ footer ul li {
         width: 100%;
         padding-left: 20px;
         padding-right: 40px;
-        padding-top: 10px;
+        padding-top: 80px;
     }
 
     .options_recherche {
         margin: 10px 0px;
     }
-
+    /* estas declaraciones ,las 2 siguientes están hechas poor Thomas y son para modificar el contenido del icono de recherche */
+    .options_recherche_submit span{
+        display:none;
+    }
+    .options_recherche_submit i{
+        display:block;
+    }
     .options_filtres {
         display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+        flex-direction: row;
+        flex-wrap: wrap;
         align-content: center;
         flex-flow: wrap;
 
         padding-right: 15px;
     }
-
+/* Hebergement et aside media movil */
     .conteneur {
         display: flex;
         padding: 5px 10px 5px 10px;
@@ -852,11 +924,10 @@ footer ul li {
         margin-right: 18px;
         position: relative;
     }
+    /*  Activites media movil */
+
     .option_activites_marseille {
-        
-        
         padding-left: 5px;
-        
         padding-right: 5px;
     }
     .a_marseille_1 {
@@ -875,6 +946,7 @@ footer ul li {
         border-top-left-radius: 20px;
         display: flex;
     }
+    /*  Footer media movil */
     footer {
         flex-direction: column;
     }

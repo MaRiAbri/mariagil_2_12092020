@@ -15,19 +15,23 @@
         <picture class="logo">
             <img class="logo__img" src="images/logo/Reservia@3x.png" alt="Logo de Reservia">
         </picture>
-        <nav class="nav">
-            <ul class="nav_ul">
-                <li class="nav_li">
-                    <a class="nav_a" href="#">Hebergements</a>
-                </li>
-                <li class="nav_li">
-                    <a class="nav_a" href="#">Activites</a>
-                </li>
-                <li class="nav_li">
-                    <a class="nav_a" href="#">S'inscrire</a>
-                </li>
-            </ul>
-        </nav>
+        
+            <nav class="nav">
+                <ul class="nav_ul">
+                    <li class="nav_li">
+                        <a class="nav_a_liens" href="#">Hebergements</a>
+                    </li>
+                    <li class="nav_li">
+                        <a class="nav_a_liens" href="#">Activites</a>
+                    </li>
+                    <li class="nav_li_inscrire">
+                        <a class="nav_a_liens" href="#">S'inscrire</a>
+                    </li>
+                </ul>
+                <!-- <a class="inscrire" href="#">S'inscrire</a> -->
+            </nav>
+            <!-- <a class="inscrire" href="#">S'inscrire</a> -->
+       
     </header>
     <section class="options">
         <h1 class="options_h1">Trouvez votre herbegement pour des vacances de reves</h1>
@@ -49,8 +53,11 @@
                 <!-- utilizando un span -->
                 <input type="search" name="Contenedor" id="opciones__busqueda--search">
 
-                <label for="options_recherche_submit"><button class="options_recherche_submit">
-                        Recherche</button></label></form>
+                <label for="options_recherche_submit">
+                    <button class="options_recherche_submit">
+                        <i class="fas fa-map-marker"></i><span>Recherche</span></button>
+                    </label>
+                </form>
         </div>
         <div class="options_filtres">
             <!-- <p><b>Filtres</b></style>
@@ -73,7 +80,7 @@
                 <h3>Animaux autorisés</h3>
             </button>
         </div>
-        <p class="p_info"><i class="fas fa-info-circle"></i>&nbsp;  Plus de 500 logements dans cette ville</p>
+        <p class="p_info"><i class="fas fa-info-circle"></i>&nbsp; Plus de 500 logements dans cette ville</p>
     </section>
 
     <div class="conteneur">
@@ -82,8 +89,8 @@
             <div class="offre">
                 <div class="hebergement">
                     <figure class="imag_hotel">
-                        <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannebière"
-                            class="hebergement_image" srcset="">
+                        <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                            alt="Auberge la Cannebière" class="hebergement_image" srcset="">
                     </figure>
                     <h4 class="hebergement_text_principel">Auberge la Cannebière</h4>
                     <p class="hebergement_text_secundaire">Nuit a partir de <b>25€</b></p>
@@ -112,8 +119,8 @@
                 </div>
                 <div class="hebergement">
                     <figure class="imag_hotel">
-                        <img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hotel les muettes"
-                            class="hebergement_image" srcset="">
+                        <img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+                            alt="Hotel les muettes" class="hebergement_image" srcset="">
                     </figure>
                     <h4 class="hebergement_text_principel">Hotel les muettes</h4>
                     <p class="hebergement_text_secundaire">Nuit a partir de <b>76€</b></p>
@@ -130,40 +137,40 @@
                         <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hotel la mer"
                             class="hebergement_image" srcset="">
                     </figure>
-                    
-                        <h4 class="hebergement_text_principel">Hotel la mer</h4>
-                        <p class="hebergement_text_secundaire">Nuit a partir de <b>46€</b></p>
-                        <p id="etoiles">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star"></i>
-                           
-                        </p>
-                    
+
+                    <h4 class="hebergement_text_principel">Hotel la mer</h4>
+                    <p class="hebergement_text_secundaire">Nuit a partir de <b>46€</b></p>
+                    <p id="etoiles">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+
+                    </p>
+
                 </div>
                 <div class="hebergement">
                     <figure class="imag_hotel">
-                        <img src="images/hebergements/4_small//nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge la Panier"
-                            class="hebergement_image" srcset="">
+                        <img src="images/hebergements/4_small//nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
+                            alt="Auberge la Panier" class="hebergement_image" srcset="">
                     </figure>
-                    
-                        <h4 class="hebergement_text_principel">Auberge la Panier</h4>
-                        <p class="hebergement_text_secundaire">Nuit a partir de <b>23€</b></p>
-                        <p id="etoiles">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>
-                        </p>
-                    
+
+                    <h4 class="hebergement_text_principel">Auberge la Panier</h4>
+                    <p class="hebergement_text_secundaire">Nuit a partir de <b>23€</b></p>
+                    <p id="etoiles">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </p>
+
                 </div>
                 <div class="hebergement">
                     <figure class="imag_hotel">
-                        <img src="images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hotel chez Amina"
-                            class="hebergement_image" srcset="">
+                        <img src="images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
+                            alt="Hotel chez Amina" class="hebergement_image" srcset="">
                     </figure>
                     <h4 class="hebergement_text_principel">Hotel chez Amina</h4>
                     <p class="hebergement_text_secundaire">Nuit a partir de <b>96€</b></p>
@@ -179,11 +186,13 @@
             <li class="ancle">Aficher plus</li>
         </section>
         <aside class="aside">
-            <div class="title_aside"><h1>Les plus populaires</h1><i class="fas fa-chart-line"></i></div>
+            <div class="title_aside">
+                <h1>Les plus populaires</h1><i class="fas fa-chart-line"></i>
+            </div>
             <div class="les_plus_populaires">
                 <figure class="img_aside">
-                    <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hótel le soleil du matín"
-                        class="les_plus_populaires_image" srcset="">
+                    <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+                        alt="Hótel le soleil du matín" class="les_plus_populaires_image" srcset="">
                 </figure>
                 <div class="pepito">
                     <h4 class="populaires_text_principel">Hótel le soleil du matín</h4>
@@ -200,8 +209,8 @@
 
             <div class="les_plus_populaires">
                 <figure class="img_aside">
-                    <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au couer de l'eau<br> Chambre d'hótes"
-                        class="les_plus_populaires_image" srcset="">
+                    <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
+                        alt="Au couer de l'eau<br> Chambre d'hótes" class="les_plus_populaires_image" srcset="">
                 </figure>
                 <div class="pepito">
 
@@ -219,8 +228,8 @@
             </div>
             <div class="les_plus_populaires">
                 <figure class="img_aside">
-                    <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hótel tout bleu et Blanc"
-                        class="les_plus_populaires_image" srcset="">
+                    <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
+                        alt="Hótel tout bleu et Blanc" class="les_plus_populaires_image" srcset="">
                 </figure>
                 <div class="pepito">
                     <!-- En este elemento he formateado el texto principal, pero tengo la clase "pepito con la que puedo formatear la gobalidad del texto y la imagen en lugar de dar una clase a cada cosa?" -->
