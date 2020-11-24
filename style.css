@@ -38,7 +38,7 @@ ol,ul {
 }
 a:link, a:visited, a:active {
     text-decoration:none;
-    color:blue;
+    color:rgb(56, 96, 252);
 }
 img {
     max-width: 100%;
@@ -94,8 +94,10 @@ header {
     padding: 45px 0;
 }
 .nav_li_inscrire{
-    color: blue;
-    padding-top: 44px;
+    color: rgb(56, 134, 252);
+    padding-top: 45px;
+    padding-left: 15px;
+    font-weight: bold;
 }
 .nav_li:hover {
     border-top: 2px solid rgb(0, 0, 255);
@@ -219,14 +221,15 @@ body>section.options>h4 {
 }
 
 .options_filtres_icono {
-    width: 36px;
-    height: 36px;
+    width: 35px;
+    height: 35px;
     background-color: rgba(158, 215, 244, 0.78);
-    color: blue;
+    color: rgb(56, 134, 252);
     font-size: 14px;
     border-radius: 2000px;
     position: absolute;
-    left: 0;
+    left: 1px;
+    top: 1px;
 }
 
 .options_filtres_icono i {
@@ -367,7 +370,7 @@ body>div>section>h1 {
 #etoiles {
     margin: 0px 0px 0px 12px;
     font-size: 10px;
-    padding: 0px 0px 15px 18px;
+    padding: 0px 0px 15px 1px;
     color: blue;
 }
 
@@ -476,7 +479,7 @@ body>div>aside>h1 {
 .activites {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     width: 100%;
     height: 100%;
     border-radius: 20px;
@@ -527,6 +530,7 @@ body>section.activites>div>div:nth-child(2)>article:nth-child(2)>h4 {
     /*! background: white; */
     /*! border-radius: 20px; */
     /*! font-size: 12px; */
+    align-content: space-around;
 }
 
 .a_marseille_1 {
@@ -617,6 +621,109 @@ footer ul li {
     list-style: none;
 }
 /*  Media para tablet */
+@media screen and (max-width: 1024px){
+    .logo {
+        width: 130px;
+        height: 100%;
+        padding-left: 40px;
+        padding-top: 22px;
+    }
+    .options {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .hebergement {
+        display: flex;
+        flex-direction: column;
+        margin: 5px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+        margin-bottom: 2%;
+        background: rgb(255, 255, 255);
+        flex-grow: 0.7;
+        align-content: center;
+        width: 40%;
+        height: 220px;
+        border-radius: 20px;
+        margin-right: 18px;
+    }
+    .populaires_text_principel {
+        font-size: 10px;
+        font-weight: bold;
+        text-align: left;
+        padding: 20px 5px 0px 10px;
+    }
+    
+    .populaires_text_secundaire {
+        font-size: 10px;
+        text-align: left;
+        padding: 10px 5px 5px 10px;
+    }
+    #etoiles_populaires {
+        margin: 0px 0px 0px 12px;
+        font-size: 10px;
+        padding: 5px 0px 10px 0px;
+        color: blue;
+    }
+    .option_activites_marseille {
+        display: flex;
+        align-content: space-around;
+        padding-left: 40px;
+        flex-flow: wrap;
+        padding-right: 40px;
+        /*! width: 85%; */
+    }
+    .a_marseille_1 {
+        background: rgb(255, 255, 255);
+        width: 90%;
+        height:  100%;
+        border-radius: 20px;
+        box-shadow: 0px 2px 7px 0px rgb(128, 121, 123);
+    }
+    .activites_a_marseille_1 {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        height: 120%;
+        background: rgb(255, 255, 255);
+        border-radius: 20px;
+        font-size: 12px;
+        align-content: center;
+    }
+    .a_marseille {
+        width: 100%;
+        /*! max-height: 180px; */
+        border-radius: 20px;
+        box-shadow: 0px 2px 7px 0px rgb(57, 65, 68);
+        /*! width: 90%; */
+        height: 90%;
+        display: flex;
+        /*! flex-direction: column; */
+    }
+    .activites_a_marseille {
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+        background: rgb(255, 255, 255);
+        width: 45%;
+        height: 100%;
+        border-radius: 20px;
+    }
+    .img_activites_large {
+        overflow: hidden;
+        height: 372px;
+        width: 100%;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+    }
+    footer ul {
+        padding: 10px 70px;
+        list-style: none;
+    }
+}
 @media screen and (max-width: 768px) {
     /* Header media tablet  */
     .logo {
@@ -688,13 +795,13 @@ footer ul li {
 
     .hebergement {
         display: flex;
-        flex-direction: column;
+        flex-flow: column;
         margin: 5px;
         margin-bottom: 2%;
         background: white;
         flex-grow: 0.7;
         align-content: center;
-        width: 100%;
+        width: 30%;
         height: 220px;
         border-radius: 20px;
         margin-right: 18px;
@@ -728,9 +835,26 @@ footer ul li {
         display: flex;
         border-bottom-left-radius: 10%;
         border-top-left-radius: 10%;
-        width: 300px;
+        width: 100%;
         height: 100%;
     }
+    .populaires_text_principel {
+        font-size: 1em;
+        font-weight: bold;
+        text-align: left;
+        padding: 20px 5px 0px 25px;
+    }
+    
+    .populaires_text_secundaire {
+        font-size: 0.75em;
+        text-align: left;
+        padding: 10px 5px 5px 25px;
+    }
+    #etoiles_populaires {
+        margin: 0px 0px 0px 12px;
+        font-size: 10px;
+        padding: 5px 0px 10px 14px;
+        color: blue;
     .option_activites_marseille {
         display: flex;
         justify-content: space-around;
@@ -740,50 +864,6 @@ footer ul li {
     }
     /* Activites media tablet */
 
-    /* .a_marseille_1 {
-        padding-bottom: 9%;
-        margin-bottom: 15px;
-        width: 300px;
-        max-height: 180px;
-        border-radius: 20px;
-        box-shadow: 0px 2px 7px 0px rgb(57, 65, 68);
-        width: 300px;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-    } */
-    /* para modificar las imagenes largas y darles el mismo formato que a las cortas puedo utilizar el sector multiple, es decir:juntar las dos clases separadas por una coma y de esta manera puedo aplicar las mismas propiedasdes al bloque, imagenes,texto,ecetera  */
-    .a_marseille_1_img {
-        overflow: hidden;
-        width: 100%;
-        height: 100%;
-        border-top-right-radius: 20px;
-        border-top-left-radius: 20px;
-    }
-    /* .a_marseille_1 {
-        background: rgb(255, 255, 255);
-        width: 300px;
-        height: 96.5%;
-        border-radius: 20px;
-        box-shadow: 0px 2px 7px 0px rgb(128, 121, 123);
-    }   */
-.imag_activites_courte {
-    overflow: hidden;
-    height: 360px;
-    max-width: 100%;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-    display: flex;
-}
-.img_activites_large {
-    overflow: hidden;
-    width: 100%;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-    height: 150px;
-    box-sizing: border-box;
-    position: relative;
-}
 /* Footer media tablet */
     footer ul {
         padding: 55px;
@@ -834,7 +914,6 @@ footer ul li {
         padding: 0;
         color: black;
         text-decoration: none;
-
         width: 180px;
         text-align: center;
     }
@@ -868,7 +947,7 @@ footer ul li {
         width: 100%;
         padding-left: 20px;
         padding-right: 40px;
-        padding-top: 80px;
+        padding-top: 45px;
     }
 
     .options_recherche {
@@ -880,6 +959,17 @@ footer ul li {
     }
     .options_recherche_submit i{
         display:block;
+    }
+    /* continuo yo la modificacion del boton */
+    .options_recherche_submit {
+        margin-left: -9px;
+        width: 40px;
+        height: 30px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        background-color: rgba(0, 101, 252, 0.8);
+        border-color: rgba(0, 101, 252, 0.8);
+        color: rgb(255, 255, 255);
     }
     .options_filtres {
         display: flex;
@@ -938,7 +1028,23 @@ footer ul li {
         border-radius: 20px;
         box-shadow: 0px 2px 7px 0px rgb(128, 121, 123);
     }
+    .a_marseille{
+        background: rgb(255, 255, 255);
+width: 300px;
+height: 100%;
+margin-bottom: 15px;
+border-radius: 20px;
+box-shadow: 0px 2px 7px 0px rgb(128, 121, 123);
+    }
     .img_activites_large {
+        overflow: hidden;
+        height: 150px;
+        max-width: 100%;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+        display: flex;
+    }
+    .imag_activites_courte {
         overflow: hidden;
         height: 150px;
         max-width: 100%;
