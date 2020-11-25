@@ -265,6 +265,7 @@ body>section.options>h4 {
 
 .p_info i {
     padding-right: 10px;
+    color: rgb(56, 134, 252);
 }
 
 /* Hebergement et aside */
@@ -494,7 +495,12 @@ body>div>aside>h1 {
     text-align: left;
     padding: 20px 5px 0px 30px;
 }
-
+#etoiles_populaires {
+    margin: 0px 0px 0px 12px;
+    font-size: 10px;
+    padding: 5px 0px 10px 16px;
+    color: blue;
+}
 .populaires_text_secundaire {
     font-size: 10px;
     text-align: left;
@@ -1080,6 +1086,7 @@ footer ul li {
     .option_activites_marseille {
         padding-left: 5px;
         padding-right: 5px;
+        display: flex;
     }
 
     .a_marseille_1 {
@@ -1103,7 +1110,7 @@ footer ul li {
     .img_activites_large {
         overflow: hidden;
         height: 150px;
-        max-width: 100%;
+        min-width: 100%;
         border-top-right-radius: 20px;
         border-top-left-radius: 20px;
         display: flex;
