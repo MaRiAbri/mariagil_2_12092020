@@ -55,8 +55,11 @@ a:active {
     color: rgb(56, 96, 252);
 }
 
+#nav_a_liens_activites a:visited{
+   color:  rgb(19, 18, 18);
+}
 img {
-    max-width: 100%;
+    width: 100%;
 }
 
 /* Elements principaux de la page */
@@ -78,8 +81,8 @@ header {
 }
 
 .logo__img {
-    width: 50%;
-    height: 50%;
+    width: 45%;
+    height: 45%;
 }
 
 /* Navigation */
@@ -865,7 +868,7 @@ footer ul li {
         padding: 8px 8px 8px 8px;
         margin-left: 5px;
         margin-bottom: 25px;
-        max-width: 100%;
+        max-width: 120%;
         justify-content: flex-start;
     }
 
@@ -998,8 +1001,8 @@ footer ul li {
 
     /* options media movil */
     .options_h1 {
-        /*! font-size: 1.5em; */
-        /*! margin-bottom: 0.5em; */
+         font-size: 1.5em; 
+         margin-bottom: 0.5em;
     }
 
     .options {
@@ -1087,11 +1090,13 @@ footer ul li {
         padding-left: 5px;
         padding-right: 5px;
         display: flex;
+        flex-direction: column;
+        max-width: 40%;
     }
 
     .a_marseille_1 {
         background: rgb(255, 255, 255);
-        width: 300px;
+        width: 328px;
         height: 100%;
         margin-bottom: 15px;
         border-radius: 20px;
@@ -1100,7 +1105,7 @@ footer ul li {
 
     .a_marseille {
         background: rgb(255, 255, 255);
-        width: 300px;
+        width: 328px;
         height: 100%;
         margin-bottom: 15px;
         border-radius: 20px;
