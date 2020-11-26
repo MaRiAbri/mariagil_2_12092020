@@ -942,7 +942,7 @@ footer ul li {
     }
 
     .logo {
-        padding: 10px 0px 20px 17px;
+        padding: 10px 0px 20px 30px;
 
         width: 100px;
         height: 50px;
@@ -977,7 +977,7 @@ footer ul li {
     }
 
     .nav_li:hover {
-        border-bottom: 3px solid rgb(0, 101, 252);
+        border-bottom: 4px solid rgb(0, 101, 252);
         border-top: none;
     }
 
@@ -995,9 +995,9 @@ footer ul li {
         color: blue;
     }
 
-    .nav_a:hover {
+    /* .nav_a:hover {
         color: blue;
-    }
+    } */
 
     /* options media movil */
     .options_h1 {
@@ -1009,9 +1009,9 @@ footer ul li {
         display: flex;
         flex-direction: column;
         width: 100%;
-        padding-left: 20px;
+        padding-left: 30px;
         padding-right: 40px;
-        margin-top: 45px;
+        margin-top: 50px;
     }
 
     .options_recherche {
@@ -1045,10 +1045,22 @@ footer ul li {
         flex-wrap: wrap;
         align-content: center;
         flex-flow: wrap;
-
         padding-right: 15px;
     }
 
+    .options_filtres_title {
+        display: flex;
+        position: relative;
+        height: auto;
+        border-radius: 2000px;
+        background-color: rgb(255, 255, 255);
+        border-width: 0.3px;
+    }
+    .options_filtres p {
+        margin: 0px 260px 0px 0px;
+        font-weight: bold;
+        font-size: 1.1em;
+    }
     /* Hebergement et aside media movil */
     .conteneur {
         display: flex;
