@@ -135,7 +135,7 @@ header {
 }
 
 .nav_a:visited {
-    color: blue;
+    color: rgb(18, 18, 19);
 }
 
 /* Options */
@@ -835,10 +835,9 @@ footer ul li {
 
     .offre {
         display: flex;
-        /*! flex-flow: wrap; */
-        /*! justify-content: space-between; */
+        flex-flow: wrap;
+        justify-content: space-between;
         border-radius: 20px;
-        padding: 0.5em;
         width: 100%;
     }
 
@@ -885,12 +884,13 @@ footer ul li {
     .les_plus_populaires {
         display: flex;
         background: rgb(255, 255, 255);
-        width: 98%;
+        /*! width: 98%; */
         height: 125px;
         padding: 5px;
         border-radius: 20px;
         margin-top: 20px;
         justify-content: center;
+        margin-left: 25px;
     }
 
     .les_plus_populaires_image {
@@ -980,7 +980,6 @@ footer ul li {
     background-image: url(images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
     background-size: cover;
     height: 3rem;
-    width: 100%;
 }
     .nav_li {
         margin: 2em 0em;
@@ -1120,8 +1119,9 @@ footer ul li {
         padding-left: 5px;
         padding-right: 5px;
         display: flex;
-        flex-direction: column;
-        max-width: 40%;
+        flex-flow: column;
+        max-width: 100%;
+        margin-left: -15px;
     }
 
     .a_marseille_1 {
