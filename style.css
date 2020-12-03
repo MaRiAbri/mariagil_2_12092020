@@ -75,15 +75,15 @@ header {
 
 .logo {
     width: 130px;
-    height: 100%;
-    padding-left: 80px;
+    height: auto;
+    padding-left: 73px;
 
     padding-top: 22px;
 }
 
 .logo__img {
-    width: 45%;
-    height: 45%;
+    width: 70%;
+    height: auto;
 }
 
 /* Navigation */
@@ -285,7 +285,7 @@ body>section.options>h4 {
     /*  Para colocar el aside en primer lugar luego utilizaré en los media queris:  
      flex-direction: column-reverse;
      de esta manera el aside pasará en primer lugar en las versiones moviles */
-    padding: 5px 40px 5px 40px;
+    padding: 5px 60px 5px 60px;
     height: auto;
     width: 95%;
     justify-content: center;
@@ -433,8 +433,8 @@ body>section>div.conteneur>section>li {
     display: flex;
     flex-direction: column;
     border-radius: 20px;
-    padding: 8px 8px 8px 8px;
-    margin-left: 5px;
+    padding: px 5px 5px 5px;
+    margin-left: 15px;
     max-width: 30%;
     justify-content: flex-start;
 }
@@ -496,8 +496,8 @@ body>div>aside>h1 {
     flex-direction: column;
     justify-content: left;
     width: 60%;
-    height: 100%;
-    padding: 0px 8px 0px 5px;
+    /*! height: 100%; */
+    /*! padding: 0px 8px 0px 5px; */
 }
 
 .populaires_text_principel {
@@ -527,13 +527,14 @@ body>div>aside>h1 {
     width: 100%;
     height: 100%;
     border-radius: 20px;
+    padding: 0px 53px;
 }
 
 .activites h1 {
     font-size: 16px;
     font-weight: bold;
     margin: 10px 0px 0px 10px;
-    padding: 30px 0px 30px 90px;
+    padding: 30px 0px 30px 15px;
 }
 
 .option_activites_marseille {
@@ -1105,7 +1106,9 @@ footer ul li {
         margin-right: 18px;
         position: relative;
     }
-
+    .les_plus_populaires {
+        
+        width: 90%;}
     /*  Activites media movil */
 
     .option_activites_marseille {
@@ -1124,7 +1127,9 @@ footer ul li {
         border-radius: 20px;
         box-shadow: 0px 2px 7px 0px rgb(128, 121, 123);
     }
-
+.a_marseille_1_img{
+    width: 100%;
+}
     .a_marseille {
         background: rgb(255, 255, 255);
         width: 328px;
