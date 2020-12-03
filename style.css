@@ -607,7 +607,7 @@ body>section.activites>div>div:nth-child(2)>article:nth-child(2)>h4 {
 }
 
 .imag_activites_courte {
-    overflow: clip;
+    overflow: hidden;
     width: 100%;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
@@ -976,7 +976,12 @@ footer ul li {
         /*! margin: 0px; */
         align-content: space-around;
     }
-
+.text{
+    background-image: url(images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
+    background-size: cover;
+    height: 3rem;
+    width: 100%;
+}
     .nav_li {
         margin: 2em 0em;
         padding: 0;
